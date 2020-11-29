@@ -6,7 +6,7 @@ clc
  d= {'Dataset', 'Accuracy','Time','p','C','tau'};  
  xlswrite('nonlin_res_pin.xlsx', d,'F1');
 
-for index=1:20
+for index=2:20s
 if (index==1)
 load('monks_1_train.txt');
  load('monks_1_test.txt');
@@ -265,7 +265,7 @@ if(index==19)
    Y(find(Y==2))=-1;
     Ctrain=X(1:100,:);
     dtrain= Y(1:100,:);
-    Ctest= X(101:end,:);l
+    Ctest= X(101:end,:);
     dtest= Y(101:end,:);
           disp('Prlx');
 
